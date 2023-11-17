@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="apps.js" defer></script>
+</head>
+<style>
+    *{
+        font-family:'Times New Roman', Times, serif;
+        margin: 0;
+    }
+
+    body{
+        background: linear-gradient(red,orange);
+        background-attachment: fixed;
+    }
+    #forms{
+        width: 400px;
+        margin: 20vh auto 0 auto;
+        background-color: #fff;
+        padding: 28px;
+        border-radius: 7px;
+
+    }
+    h1{
+        text-align: center;
+        color: red;
+    }
+    button{
+        color: red;
+        width: 80%;
+        height: 30px;
+        border-radius: 7px orange;
+        text-align: center;
+        cursor: pointer;
+        margin: 25px;
+
+    }
+    .cnt{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 0;
+    }
+    .cnt input{
+        margin-top: 5px;
+        font-size: 19px;
+        border-radius: 3px;
+        padding: 1opx;
+        border: 1px solid blue;
+    }
+    .cnt input:focus{
+        outline: 0;
+    }
+    .using properly{
+        color: red;
+        font-size: 10px;
+    }
+    .cnt-group.success input{
+        border-color: green;
+    }
+    .cnt-group.error input{
+       border-color:red;
+    }
+    
+
+</style>
+<body>
+    <div class="main">
+        <form id="forms" action=" ">
+            <h1>Registration</h1>
+            <div class="cnt">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+                <div class="Error">Required</div>
+            </div>
+
+            <div class="cnt">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <div class="Error"></div>
+            </div>
+
+            <div class="cnt">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass">
+                <div class="Error"></div>
+            </div>
+
+            <div class="cnt">
+                <label for="pass">Again Re-entry the Password:</label>
+                <input type="password" name="pass2" id="pass">
+                <div class="Error"></div>
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+        
+    </div>
+    
+</body>
+</html>
